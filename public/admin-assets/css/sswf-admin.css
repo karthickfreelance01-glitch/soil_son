@@ -1,0 +1,76 @@
+/* SSWF brand layer on top of the gh.hms admin theme */
+:root{
+  --vv-primary:#1a28aa; --vv-accent:#2f47e0; --vv-accent-2:#3b56f0;
+  --vv-grad:linear-gradient(135deg,#1a28aa 0%,#2338c8 55%,#2f47e0 100%);
+  --bs-primary:#1a28aa; --bs-primary-rgb:26,40,170;
+}
+.btn-primary,.bg-primary{background:var(--vv-primary)!important;border-color:var(--vv-primary)!important;color:#fff!important}
+.btn-primary:hover,.btn-primary:focus{background:var(--vv-accent)!important;border-color:var(--vv-accent)!important}
+.btn-outline-primary{color:var(--vv-primary)!important;border-color:var(--vv-primary)!important}
+.btn-outline-primary:hover{background:var(--vv-primary)!important;color:#fff!important}
+.text-primary{color:var(--vv-primary)!important}
+a{color:var(--vv-primary)} a:hover{color:var(--vv-accent)}
+.form-control:focus,.form-select:focus{border-color:var(--vv-accent);box-shadow:0 0 0 .2rem rgba(47,71,224,.15)}
+.form-check-input:checked{background-color:var(--vv-accent);border-color:var(--vv-accent)}
+
+/* Sidebar */
+.sidebar .vv-brand{font-weight:800;letter-spacing:.06em;color:var(--vv-primary);line-height:1.1}
+.sidebar .vv-brand small{display:block;font-size:10px;font-weight:600;letter-spacing:.04em;color:#8a8a9a}
+.sidebar .sidebar-menu ul li a.active,.sidebar .sidebar-menu ul li a:hover{color:var(--vv-accent)!important}
+.sidebar .sidebar-menu > ul > li > a.active{background:rgba(47,71,224,.08)!important;border-radius:10px}
+.sidebar .sidebar-menu ul li a.active i{color:var(--vv-accent)!important}
+
+/* Header */
+.vv-avatar{width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  background:var(--vv-grad);color:#fff;font-weight:700;font-size:18px;box-shadow:0 6px 16px rgba(26,40,170,.25)}
+.profile-trigger{position:relative;text-decoration:none}
+.profile-trigger .settings-icon{position:absolute;left:30px;bottom:-2px;width:16px;height:16px;background:#fff;border-radius:50%;
+  border:1px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--vv-primary)}
+.vv-bell{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center}
+
+/* Cards & widgets (same feel as the gh dashboard) */
+.card{border-radius:16px;border:1px solid #eef0f4;box-shadow:0 4px 18px rgba(20,20,43,.04)}
+.card-header{background:#fff;border-bottom:1px solid #f0f1f5;border-radius:16px 16px 0 0!important}
+.vv-welcome{background:var(--vv-grad);border-radius:20px;color:#fff;position:relative;overflow:hidden}
+.vv-welcome:after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.08)}
+.vv-welcome:before{content:"";position:absolute;right:120px;bottom:-90px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.06)}
+.widget-card{border-radius:1rem;transition:transform .3s ease,box-shadow .3s ease,filter .3s ease;color:#fff;border:0;overflow:hidden;position:relative}
+.widget-card:hover{transform:translateY(-6px) scale(1.02);filter:brightness(1.08);box-shadow:0 20px 30px rgba(0,0,0,.18)}
+.widget-card .vv-num{font-size:30px;font-weight:800;line-height:1}
+.widget-card .vv-ico{width:54px;height:54px;border-radius:14px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:22px}
+.widget-card a{color:#fff;text-decoration:none}
+
+.table thead th{background:#f7f5fa;color:#1a28aa;font-weight:600;white-space:nowrap;border-bottom:0}
+.table td{vertical-align:middle}
+.badge{font-weight:600;letter-spacing:.02em}
+.vv-status-pills .nav-link{border-radius:30px;color:#555;padding:.35rem 1rem}
+.vv-status-pills .nav-link.active{background:var(--vv-primary);color:#fff}
+.dataTables_wrapper .dataTables_filter input{border:1px solid #dee2e6;border-radius:8px;padding:6px 12px;margin-left:0}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{background:var(--vv-primary)!important;color:#fff!important;border:0!important;border-radius:6px}
+
+/* Gallery admin */
+.vv-g-card{border-radius:14px;overflow:hidden;position:relative;background:#fff;border:1px solid #eee;transition:.25s}
+.vv-g-card:hover{box-shadow:0 12px 26px rgba(0,0,0,.1);transform:translateY(-3px)}
+.vv-g-card img{width:100%;height:170px;object-fit:cover;display:block}
+.vv-g-card.is-hidden img{filter:grayscale(1) opacity(.5)}
+.vv-g-card .vv-g-tag{position:absolute;top:10px;left:10px}
+.vv-dropzone{border:2px dashed #d7c7e0;border-radius:14px;padding:26px;text-align:center;background:#fbf8fd;cursor:pointer;transition:.2s}
+.vv-dropzone:hover,.vv-dropzone.drag{border-color:var(--vv-accent);background:#fff3f9}
+.vv-thumb{width:64px;height:48px;object-fit:cover;border-radius:8px}
+
+/* SEO preview */
+.vv-serp{font-family:Arial,sans-serif;max-width:600px}
+.vv-serp .t{color:#1a0dab;font-size:19px;line-height:1.3}
+.vv-serp .u{color:#006621;font-size:13px}
+.vv-serp .d{color:#545454;font-size:13px}
+.vv-count{font-size:12px}
+
+#pageLoader{position:fixed;top:0;left:0;height:3px;width:0;background:var(--vv-grad);z-index:99999;transition:width .4s}
+.vv-admin-footer a{color:var(--vv-primary)}
+
+/* Login */
+.vv-auth{min-height:100vh;background:radial-gradient(circle at 15% 20%,rgba(47,71,224,.18),transparent 40%),radial-gradient(circle at 85% 80%,rgba(26,40,170,.22),transparent 45%),#f8f5fb;display:flex;align-items:center}
+.vv-auth .card{border-radius:22px;box-shadow:0 30px 60px rgba(26,40,170,.15);border:0;overflow:hidden}
+.vv-auth .vv-auth-side{background:var(--vv-grad);color:#fff;position:relative}
+.vv-auth .vv-auth-side img{filter:drop-shadow(0 8px 20px rgba(0,0,0,.25))}
+.vv-auth .input-group-text{background:#fff}
